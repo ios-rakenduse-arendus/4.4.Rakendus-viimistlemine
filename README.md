@@ -5,7 +5,7 @@
 1. Tuvastame kokkupuuted ja kokkupõrked erinevate füüsiliste objektide vahel. Avame *GameScene.swift* fail ning kirjutame sinna järgmise funktsiooni:
 
 ```swift
-/* Kontrollime Eksmati kokkupõrget posti või põrandaga ning nendel juhtudel lõpetame mängu */
+
 func didBegin(_ contact: SKPhysicsContact) {
         let firstBody = contact.bodyA
         let secondBody = contact.bodyB
@@ -23,14 +23,14 @@ func didBegin(_ contact: SKPhysicsContact) {
                 self.eksmati.removeAllActions()
             }
             
-/* Kontrollime, kas Eksmati sai EAP kätte, lisame sellele tegevusele heli ning suurendame skoori ja eemaldame kätte saadud EAP ekraanilt*/
+
         } else if firstBody.categoryBitMask == CollisionBitMask.eksmatiCategory && secondBody.categoryBitMask == CollisionBitMask.EAPCategory {
-            run(coinSound)
+            run(eapSound)
             score += 1
             scoreLbl.text = "\(score)"
             secondBody.node?.removeFromParent()
         } else if firstBody.categoryBitMask == CollisionBitMask.EAPCategory && secondBody.categoryBitMask == CollisionBitMask.eksmatiCategory {
-            run(coinSound)
+            run(eapSound)
             score += 1
             scoreLbl.text = "\(score)"
             firstBody.node?.removeFromParent()
@@ -88,11 +88,11 @@ for touch in touches{
 
 # ÜLESANNE:
 * Selleks, et tekiks heli, kui Eksmati korjab EAP'sid tuleb :
-	* Esiteks alla tõmmata siit samast repositooriumist(üleval) kättesaadav fail nimega EAPSound.mp3
-	* Lisada see fail Xcode'is EKSMATI projektis EKSMATI nimelisse kausta
+	* Esiteks alla tõmmata siit samast repositooriumist(üleval) kättesaadav kausta .zip file nimega **helid**
+	* Lisada seal olev EAPSound.mp3 Xcode'is EKSMATI projektis EKSMATI nimelisse kausta
 	* Järgmiseks tuleb lisada esimeses praktilises tunnis (**4.1. Rakendus: Projekti algus & tausta loomine**) kirjutatud muutujate hulka järgmine koodiriba: 
 
-```let coinSound = SKAction.playSoundFileNamed("EAPSound.mp3", waitForCompletion: false)```
+```let EAPSound = SKAction.playSoundFileNamed("EAPSound.mp3", waitForCompletion: false)```
 
 >Käivita simulatsion ja kontrolli, kas äpp'is toimib kõik nii nagu peab ning EAP'de kogumisel tuleb nüüd ka heli.
 
