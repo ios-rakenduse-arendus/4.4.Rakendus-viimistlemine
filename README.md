@@ -2,7 +2,7 @@
 # 4.4.Rakendus: Viimistlemine
 
 
-1. Tuvastame kokkupuuted ja kokkupõrked erinevate füüsiliste objektide vahel. Avame *GameScene.swift* fail ning kirjutame sinna järgmise funktsiooni:
+### 1. Tuvastame kokkupuuted ja kokkupõrked erinevate füüsiliste objektide vahel. Avame *GameScene.swift* fail ning kirjutame sinna järgmise funktsiooni:
 
 ```swift
 
@@ -25,12 +25,12 @@ func didBegin(_ contact: SKPhysicsContact) {
             
 
         } else if firstBody.categoryBitMask == CollisionBitMask.eksmatiCategory && secondBody.categoryBitMask == CollisionBitMask.EAPCategory {
-            run(eapSound)
+            run(EAPSound)
             score += 1
             scoreLbl.text = "\(score)"
             secondBody.node?.removeFromParent()
         } else if firstBody.categoryBitMask == CollisionBitMask.EAPCategory && secondBody.categoryBitMask == CollisionBitMask.eksmatiCategory {
-            run(eapSound)
+            run(EAPSound)
             score += 1
             scoreLbl.text = "\(score)"
             firstBody.node?.removeFromParent()
