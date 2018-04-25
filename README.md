@@ -40,6 +40,7 @@ func didBegin(_ contact: SKPhysicsContact) {
 
 ### 2. Lisame restardi, kui Eksmati kaotab. Loo *GameScene.swift* faili funktsioon nimega ```restartScene``` järgmiselt:
 
+```swift
 func restartScene(){
     self.removeAllChildren()
     self.removeAllActions()
@@ -48,6 +49,7 @@ func restartScene(){
     score = 0
     createScene()
 }
+```
 
 ### 3. Kirjuta ```touchesBegan``` funktsiooni sisse järgmine kood:
 
