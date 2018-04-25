@@ -98,7 +98,7 @@ for touch in touches{
 
 >Käivita simulatsion ja kontrolli, kas äpp'is toimib kõik nii nagu peab ning EAP'de kogumisel tuleb nüüd ka heli.
 
-* **Vaata nüüd, kas oskad iseseisvalt välja mõelda kuidas lisada mängule siin repositooriumis olemasolev wolfSound.mp3 heli nii, et see mängiks, kui Eksmati surma saab.**
+* **Vaata nüüd, kas oskad iseseisvalt välja mõelda kuidas lisada mängule siin repositooriumis heli kaustas olemasolev wolfSound.mp3 nii, et see mängiks, kui Eksmati kaotab.**
 ___
 
 
