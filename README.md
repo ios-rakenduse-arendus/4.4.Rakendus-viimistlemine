@@ -24,7 +24,7 @@ func didBegin(_ contact: SKPhysicsContact) {
             }
             
 /* Kontrollime, kas Eksmati sai EAP kätte, lisame sellele tegevusele heli ning suurendame skoori ja eemaldame kätte saadud EAP ekraanilt*/
-        } else if firstBody.categoryBitMask == CollisionBitMask.Category && secondBody.categoryBitMask == CollisionBitMask.EAPCategory {
+        } else if firstBody.categoryBitMask == CollisionBitMask.eksmatiCategory && secondBody.categoryBitMask == CollisionBitMask.EAPCategory {
             run(coinSound)
             score += 1
             scoreLbl.text = "\(score)"
