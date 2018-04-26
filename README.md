@@ -102,6 +102,13 @@ for touch in touches{
 ___
 
 
+**VIDEO (1.,2.,3. ja esimene osa ülesannetest):**
+
+<a href="https://youtu.be/-XcY-7mJ6Dk
+" target="_blank"><img src="http://img.youtube.com/vi/-XcY-7mJ6Dk/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
+
+
 # TUBLI! Sellega sai valmis meie Eksmati äpp.
 
 ### Ideid äpi edasi arendamiseks:
