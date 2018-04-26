@@ -114,7 +114,7 @@ alt="Projekti loomine" width="240" height="180" border="10" /></a>
 ### Ideid äpi edasi arendamiseks:
 
 * Eksmati animeerimine
->Näiteks joonistda juurde Eksmatist erineva liikumisasendiga pildid ning sisestada need mängu nii, et kui Eksmati ülesse liigub vajutuse peale siis muudab ta oma olekut jättes näiteks mulje hüppamisest või keel tuleb suust välja ja sisse.
+>Näiteks joonistada juurde Eksmatist erineva liikumisasendiga pildid ning sisestada need mängu nii, et kui Eksmati ülesse liigub vajutuse peale siis muudab ta oma olekut jättes näiteks mulje hüppamisest või keel tuleb suust välja ja sisse.
 * Eksmatile  heli juurde lisamine
 > Ehk, kui eksmati hüppab üles siis kasneb sellega ka üleshüppe heli või hundi jooksmise heli. 
 * Parima skoori edetabel
